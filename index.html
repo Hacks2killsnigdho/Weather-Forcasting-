@@ -2,40 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale=0.1">
-    <title>Weather Forcasting App</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<script src="index.js"></script>
-
 <body>
-    <div class="container">
-        <div class="search-box">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type=text placeholder="Enter Your Location">
-            <button class="fa-solid fa-magnifying-glass-location"></button>
-        </div>
-    </div>
-
-    <div class="weather-box">
-        <div class="box">
-            <div class="info-weather">
+    <div class="weather-app">
+        <h3 class="brand">The Weather</h3>
+        <div class="container">
+   
+            <div>
+                <h1 class="temp">168#176;</h1>
+                <div class="city-time"></div>
+                <div class="box">
+                <h1 class="name">LONDON</h1>
+                <small>
+                    <span class="time">06:09</span>
+                    <span class="date"> Monday Sept 19</span>
+                </small>
+            </div>
                 <div class="weather">
-                    <img src="images/cloud.png">
-                    <p class="temperature">16 <span>°C</span></p>
-                    <p class="description">Broken Clouds</p>
+                    <i class="fa-solid fa-cloud"></i>
+                 <span class="condition">Cloudy</span>
                 </div>
             </div>
-        </div>
-        <div class="weather-details">
-            <div class="humidity">
-                <i class="fa-solid fa-water"></i>
-            </div>
+
         </div>
     </div>
-    
+    <div class="panel">
+        <form id="locationinput">
+            <input type="text" class="search" placeholder="Search Locations">
+            <button type="Submit" class="Submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <ul class="cities">
+            <li class="city">New York</li>
+            <li class="city">California</li>
+            <li class="city">Paris</li>
+            <li class="city">Tokyo</li>
+            <li class="city">Kolkata</li>
+        </ul>
+
+        <ul class="details">
+            <h4>Weather Details</h4>
+            <li> 
+                <span>Cloudy</span>
+                <span class="Cloud">89%</span>
+            </li>
+            <li> 
+                <span>Humidity</span>
+                <span class="Humidity">64%</span>
+            </li>
+            <li> 
+                <span>Windy</span>
+                <span class="Wind">8kms/hr</span>
+            </li>
+        </ul>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
