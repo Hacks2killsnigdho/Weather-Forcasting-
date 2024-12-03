@@ -40,7 +40,7 @@ search.addEventListener('keydown', function(event) {
 
                 console.log(cloudcover,name,country,temperature,weather_descriptions,weather_icons,wind_speed);
                 
-                temp.innerText = `${temperature} C`
+                temp.innerText = `${temperature} °C`
                 city_name.innerText = name
                 Date.innerText = localtime
                 Wind.innerText = `${wind_speed} Kms/hr`;
