@@ -35,7 +35,7 @@ search.addEventListener('keydown', function(event) {
                 
                 const data = await response.json(); 
                 console.log(data);
-                const { name, country, localtime } = data.location,"%";
+                const { name, country, localtime } = data.location;
                 const {cloudcover,temperature,weather_descriptions,weather_icons,wind_speed,humidity } = data.current;
 
                 console.log(cloudcover,name,country,temperature,weather_descriptions,weather_icons,wind_speed);
